@@ -8,6 +8,11 @@ IBMEC 2025.2
 
 
 ## Objetivo
+1. Descrever os diferentes tipos de sistemas operacionais.  
+2. Conhecer as funções do núcleo do sistema operacional.  
+3. Utilizarse de uma conta Linux, com interface textual ou gráfica.  
+4. Consultar as fontes de documentação online do Linux.  
+5. Descreveros principais procedimentos de administração do sistema Linux.  
 
 ## Avaliações
 
