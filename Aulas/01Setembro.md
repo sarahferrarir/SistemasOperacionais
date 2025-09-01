@@ -8,4 +8,4 @@
 
 **>>** - Adicionar no final do arquivo
 
-**more / less** - usados para 
+**more / less** - usados para paginação de arquivos ASCII
