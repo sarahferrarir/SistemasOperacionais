@@ -7,3 +7,5 @@
 **2>** - Redireciona a saída de erros
 
 **>>** - Adicionar no final do arquivo
+
+**more / less** - usados para 
