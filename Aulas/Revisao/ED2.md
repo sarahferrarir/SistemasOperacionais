@@ -1,3 +1,5 @@
+# ED2: Introdução, Taxonomia, Estrutura do Sistema e Processos
+
 ### **❶ Qual são os objetivos e as principais funções do sistema operacional?**
 
 Os principais objetivos de um sistema operacional (SO) são: 
@@ -50,8 +52,9 @@ Sistemas com múltiplos processadores, também chamados de multiprocessados, ger
 
 ### **❻ Qual a diferença entre sistemas fortemente acoplados e fracamente acoplados?**
 
-A diferença está no grau de ligação entre a memória RAM e a CPU. Nos sistemas **fortemente acoplados**, a comunicação entre as CPUs é feita através do barramento interno ou da memória. 
-Nos sistemas **fracamente acoplados**, a comunicação é realizada por meio de protocolos de redes de computadores.
+A diferença está no grau de ligação entre a memória RAM e a CPU. Nos sistemas:
+- **fortemente acoplados**, a comunicação entre as CPUs é feita através do barramento interno ou da memória.
+- **fracamente acoplados**, a comunicação é realizada por meio de protocolos de redes de computadores.
 
 ---
 
@@ -108,15 +111,15 @@ O conceito de processo é fundamental porque ele representa um programa em execu
 
 Um processo é composto por três partes principais:
 
-- **Contexto de Hardware:** Contém o conteúdo dos registradores gerais da CPU. Quando o processo perde a utilização da CPU, o sistema salva essas informações
-- **Contexto de Software:** Especifica as características e limites dos recursos que podem ser alocados pelo processo. Ele é composto por três grupos de informações: identificação (PID), cotas e privilégios.
-- **Espaço de Endereçamento:** Possui os endereços de memória onde as instruções e os dados do programa estão armazenados para a execução.
+1. **Contexto de Hardware:** Contém o conteúdo dos registradores gerais da CPU. Quando o processo perde a utilização da CPU, o sistema salva essas informações
+2. **Contexto de Software:** Especifica as características e limites dos recursos que podem ser alocados pelo processo. Ele é composto por três grupos de informações: identificação (PID), cotas e privilégios.
+3. **Espaço de Endereçamento:** Possui os endereços de memória onde as instruções e os dados do programa estão armazenados para a execução.
 
 ---
 
 ### **⓰ Explique os possíveis estados do processo.**
 
-Quando um programa é carregado, o processo passa por diferentes estados até o seu término. Os principais estados são
+Quando um programa é carregado, o processo passa por diferentes estados até o seu término. Os principais estados são:
 
 - **Pronto:** O processo está pronto e aguardando para usar a CPU.
 - **Execução:** O processo está usando os recursos da CPU.
