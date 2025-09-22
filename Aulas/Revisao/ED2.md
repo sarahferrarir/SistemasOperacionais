@@ -57,7 +57,7 @@ Nos sistemas **fracamente acoplados**, a comunicação é realizada por meio de 
 
 ### **❼ Quais são as características dos sistemas SMP e NUMA?**
 
-SMP (multiprocessadores simétricos) e NUMA (acesso à memória não uniforme) são tipos de sistemas fortemente acoplados. A comunicação entre as CPUs é feita pelo barramento interno ou pela memória.
+SMP (multiprocessadores simétricos, um único barramento) e NUMA (acesso à memória não uniforme, diferente barramentos) são tipos de sistemas fortemente acoplados. A comunicação entre as CPUs é feita pelo barramento interno ou pela memória.
 
 ---
 
@@ -152,4 +152,4 @@ A diferença está na forma de interação com o usuário:
 
 ### **⓴ O que são daemons?**
 
-Daemons são processos iniciados pelo próprio sistema operacional. Um exemplo de daemon mencionado é o Shell.
+Daemons são processos iniciados pelo próprio sistema operacional. Um exemplo de daemon é o Shell.
