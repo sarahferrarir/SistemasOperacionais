@@ -1,7 +1,7 @@
 # Linux ─ Comandos Básicos, Avançados e PGM-BASH
 
 1. **Quais os comandos usados para desligar o sistema operacional Linux?**
-
+O comando `shutdown`.
 
 ---
 2. **O que representa a estrutura FHS (Filesystem Hierarchy Standard) no Linux?**
