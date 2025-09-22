@@ -1,8 +1,19 @@
-# Linux ─ Comandos Básicos, Avançados e PGM-BASH
+# ED1 ─ Comandos Básicos, Avançados e PGM-BASH ─ Comandos Básicos, Avançados e PGM-BASH
 
 1. **Quais os comandos usados para desligar o sistema operacional Linux?**
    
-O comando `shutdown`.
+O comando `shutdown`. Ele pode ser usado:
+
+- `$ shutdown now`    
+Isso desliga o sistema imediatamente. É o mesmo que usar `shutdown -h now`.
+- `$ shutdown +10`   
+Isso agenda o desligamento para daqui a 10 minutos. O sistema exibirá uma mensagem de aviso para todos os usuários logados.
+- `$ shutdown 23:00`   
+Isso agenda o desligamento para as 23:00 de hoje. Se o horário já tiver passado, ele agendará para as 23:00 de amanhã.
+- `$ shutdown -r now`  
+Este comando reinicia o sistema imediatamente. A opção `r` é para *reboot*.
+- `$ shutdown -c`   
+Se você agendou um desligamento, pode usar a opção `c` (de *cancel*) para abortá-lo antes que ele ocorra.
 
 ---
 2. **O que representa a estrutura FHS (Filesystem Hierarchy Standard) no Linux?**
