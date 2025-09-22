@@ -1,6 +1,7 @@
 # Linux ─ Comandos Básicos, Avançados e PGM-BASH
 
 1. **Quais os comandos usados para desligar o sistema operacional Linux?**
+   
 O comando `shutdown`.
 
 ---
@@ -17,7 +18,7 @@ O comando `shutdown`.
 
 **/etc**: Armazena arquivos de configuração específicos da instalação.
 
-**/var**: 
+**/var**: Armazena os dados das variáveis.
 
 ---
 4. **Explique a diferença entre caminho absoluto e relativo. Dê um exemplo de cada.**
@@ -80,7 +81,7 @@ Quando um arquivo é movido para um sistema de arquivos diferente, a operação 
 
 a) `$ date +%d/%m/%Y > data.txt; date +%R > hora.txt`
 
-Este comando executa duas ações sequenciais1. Primeiro, ele pega a data atual no formato dia/mês/ano ( `+%d/%m/%Y`) e redireciona a saída para um novo arquivo chamado `data.txt`. Em seguida, o comando pega a hora atual no formato hora:minuto (`+%R`) e redireciona essa saída para um novo arquivo chamado `hora.txt`.
+Este comando executa duas ações sequenciais. Primeiro, ele pega a data atual no formato dia/mês/ano ( `+%d/%m/%Y`) e redireciona a saída para um novo arquivo chamado `data.txt`. Em seguida, o comando pega a hora atual no formato hora:minuto (`+%R`) e redireciona essa saída para um novo arquivo chamado `hora.txt`.
 
 b) `$ cat data.txt hora.txt > agora.txt`
 
