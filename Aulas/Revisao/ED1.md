@@ -2,11 +2,14 @@
 
 1. **Quais os comandos usados para desligar o sistema operacional Linux?**
 
-1. **O que representa a estrutura FHS (Filesystem Hierarchy Standard) no Linux?**
 
-É o padrão de sistema para arquivos hierárquicos. Define a organização de diretórios em sistemas compatíveis com o Unix
+---
+2. **O que representa a estrutura FHS (Filesystem Hierarchy Standard) no Linux?**
 
-1. **Cite a função dos seguintes diretórios: "/bin", "/home", "/etc", "/var".**
+É o padrão de sistema para arquivos hierárquicos. Define a organização de diretórios em sistemas compatíveis com o Unix.
+
+---
+3. **Cite a função dos seguintes diretórios: "/bin", "/home", "/etc", "/var".**
 
 **/bin**: Contém executáveis para "todos" os usuários do sistema.
 
@@ -16,7 +19,8 @@
 
 **/var**: 
 
-1. **Explique a diferença entre caminho absoluto e relativo. Dê um exemplo de cada.**
+---
+4. **Explique a diferença entre caminho absoluto e relativo. Dê um exemplo de cada.**
 
 Caminhos absolutos partem direto da raiz e não dependem do diretório atual enquanto caminhos relativos saem do diretório atual.
 
@@ -24,9 +28,8 @@ ex. absoluto: `/var/spool/mail`
 
 ex. relativo: `../home/alunolista.txt`
 
- 
-
-1. **O que são i-nodes?**
+---
+5. **O que são i-nodes?**
 
 I-nodes, ou nós de índice, são uma estrutura de dados nos sistemas de arquivos do Linux que armazenam informações sobre os arquivos. Eles contêm dados como:
 
@@ -35,46 +38,45 @@ I-nodes, ou nós de índice, são uma estrutura de dados nos sistemas de arquivo
 - Dono e grupo (UID e GID).
 - Tipo de arquivo (regular, diretório, etc.).
 - Permissões de acesso (quem pode ler, gravar ou executar).
-- Carimbos de data e hora para último acesso (
-    
-    `atime`), última alteração (`ctime`) e última modificação (`mtime`).
-    
+- Carimbos de data e hora para último acesso (`atime`), última alteração (`ctime`) e última modificação (`mtime`).
 - Um contador de referências.
 
-1. **Qual comando exibe informações completas de um arquivo (incluindo i-node)?**
+---
+6. **Qual comando exibe informações completas de um arquivo (incluindo i-node)?**
 
 O comando`stat` é usado para exibir informações completas de um arquivo, incluindo detalhes sobre seu i-node.
 
-1. **Analise as alterações numéricas nos i-nodes ao realizar as operações abaixo:**
-**a) Copiar arquivo no mesmo sistema de arquivos.**
+---
+7. **Analise as alterações numéricas nos i-nodes ao realizar as operações abaixo:**
 
+>     a) Mover arquivo no mesmo sistema de arquivos.
 Quando um arquivo é copiado usando o comando `cp`, um novo i-node é criado e atribuído ao arquivo recém-criado. O i-node do arquivo original permanece inalterado. Assim, o arquivo original e a nova cópia têm i-nodes diferentes, mesmo estando no mesmo sistema de arquivos.
 
-     **b) Mover arquivo no mesmo sistema de arquivos.**
-
+     b) Mover arquivo no mesmo sistema de arquivos.
 Ao mover um arquivo com o comando `mv` dentro do mesmo sistema de arquivos, o i-node do arquivo não muda. Essa operação é simplesmente uma alteração no mapeamento do diretório: o link de referência (nome do arquivo) é removido do diretório de origem e adicionado ao diretório de destino, mas o arquivo em si (e seu i-node) não é movido fisicamente no disco.
-    **c) Copiar arquivo em outro sistema de arquivos.**
 
+    c) Copiar arquivo em outro sistema de arquivos.
 A cópia de um arquivo para um sistema de arquivos diferente sempre resulta na criação de um novo i-node para o novo arquivo. Isso ocorre porque cada sistema de arquivos gerencia seus próprios i-nodes de forma independente.
-    **d) Mover arquivo em outro sistema de arquivos.**
+
+    d) Mover arquivo em outro sistema de arquivos.
 Quando um arquivo é movido para um sistema de arquivos diferente, a operação de `mv` age como uma combinação de "copiar e excluir". O sistema cria uma nova cópia do arquivo no destino, atribuindo um novo i-node, e depois exclui o arquivo original na origem. Consequentemente, o i-node do arquivo muda.
 
-1. **Liste apenas arquivos ".txt" no diretório atual que comecem com “arq” e terminem em um dígito de 0 a 9.**
+---
+8. **Liste apenas arquivos ".txt" no diretório atual que comecem com “arq” e terminem em um dígito de 0 a 9.**
 
-1. **Quais comandos são usados para criar hard e softs links. Exemplifique.**
+---
+9. **Quais comandos são usados para criar hard e softs links. Exemplifique.**  
 
 **Hard links** são criados com o comando `ln`.
 
-- **Exemplo:** `ln arq1 arq2`. Após a execução, o i-node do novo arquivo (
-    
-    `arq2`) será o mesmo do arquivo original (`arq1`) e o contador de links mudará.
-    
+- **Exemplo:** `ln arq1 arq2`. Após a execução, o i-node do novo arquivo (`arq2`) será o mesmo do arquivo original (`arq1`) e o contador de links mudará. 
 
 **Soft links** (ou links simbólicos) são criados com a opção `-s` do comando `ln`.
 
 - **Exemplo:** `ln -s arq1 arq3`. O novo link terá um i-node diferente do original, e o tipo do arquivo será um "link simbólico". Se o arquivo original for apagado, o hard link permanecerá, mas o soft link ficará "quebrado".
 
-1. **Explique o resultado quando os comandos abaixo são digitados:**
+---
+10. **Explique o resultado quando os comandos abaixo são digitados:**
 
 a) `$ date +%d/%m/%Y > data.txt; date +%R > hora.txt`
 
@@ -99,7 +101,8 @@ e) `$ touch arq{10..50}.txt`
 
 Este comando cria múltiplos arquivos de uma vez. O`touch` cria arquivos vazios com os nomes especificados. A notação `{10..50}` é um recurso do shell que expande a sequência numérica de 10 a 50. Assim, o comando cria 41 arquivos, de `arq10.txt` até `arq50.txt`.
 
-1. **Análise cada linha do Script abaixo**
+---
+11. **Análise cada linha do Script abaixo**
 
 `#!/bin/bash`
 
@@ -133,17 +136,18 @@ Este comando cria múltiplos arquivos de uma vez. O`touch` cria arquivos vazios 
 
 - Este comando `echo` tenta imprimir o valor da variável `MSG3`, que é "date +%H", e a string "Horas". A saída será `São date +%H Horas`.
 
-**O que aconteceria se …**
-    **a) … Qual o propósito da 1a linha?**
 
-A primeira linha, `#!/bin/bash`, é chamada de "shebang". Ela é usada para especificar o caminho para o interpretador do shell que deve ser usado para executar o script. Sem ela, o sistema pode não saber como executar o arquivo, especialmente se a execução for feita diretamente (`./script.sh`).
-    **b) … não fossem colocadas as aspas na 3a linha?**
+**O que aconteceria se …**   
 
-Se as aspas fossem removidas (`MSG1=Boa Noite`), a variável `MSG1` receberia apenas a palavra `Boa`. A palavra `Noite` seria interpretada como um novo comando, e o shell retornaria um erro.
-    **c) … se fosse colocado um espaço em branco depois do sinal de igual (=) na 7a
-linha?**
+    a) … Qual o propósito da 1a linha?
+A primeira linha, `#!/bin/bash`, é chamada de "shebang". Ela é usada para especificar o caminho para o interpretador do shell que deve ser usado para executar o script. Sem ela, o sistema pode não saber como executar o arquivo, especialmente se a execução for feita diretamente (`./script.sh`).  
 
-Se houvesse um espaço em branco (`MSG3 = date +%H`), o shell tentaria executar `MSG3` como um comando, retornando um erro de "comando não encontrado".
-    **d) Qual é o objetivo do `\\` (barra invertida) na 6a linha?**
+    b) … não fossem colocadas as aspas na 3a linha?
+Se as aspas fossem removidas (`MSG1=Boa Noite`), a variável `MSG1` receberia apenas a palavra `Boa`. A palavra `Noite` seria interpretada como um novo comando, e o shell retornaria um erro.   
 
+    c) … se fosse colocado um espaço em branco depois do sinal de igual (=) na 7a
+linha?
+Se houvesse um espaço em branco (`MSG3 = date +%H`), o shell tentaria executar `MSG3` como um comando, retornando um erro de "comando não encontrado".  
+
+    d) Qual é o objetivo do `\\` (barra invertida) na 6a linha?
 A barra invertida `\` é usada como um "caractere de escape". Ela remove o significado especial do caractere que a segue, fazendo com que ele seja tratado literalmente. Neste caso, o `\` antes do `$` faz com que o shell imprima o `$` como um caractere normal, em vez de interpretá-lo como o início de uma variável.
