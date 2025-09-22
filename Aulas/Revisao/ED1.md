@@ -146,8 +146,8 @@ A primeira linha, `#!/bin/bash`, é chamada de "shebang". Ela é usada para espe
     b) … não fossem colocadas as aspas na 3a linha?
 Se as aspas fossem removidas (`MSG1=Boa Noite`), a variável `MSG1` receberia apenas a palavra `Boa`. A palavra `Noite` seria interpretada como um novo comando, e o shell retornaria um erro.   
 
-    c) … se fosse colocado um espaço em branco depois do sinal de igual (=) na 7a
-linha?
+    c) … se fosse colocado um espaço em branco depois do sinal de igual (=) na 7a linha?
+    
 Se houvesse um espaço em branco (`MSG3 = date +%H`), o shell tentaria executar `MSG3` como um comando, retornando um erro de "comando não encontrado".  
 
     d) Qual é o objetivo do `\\` (barra invertida) na 6a linha?
