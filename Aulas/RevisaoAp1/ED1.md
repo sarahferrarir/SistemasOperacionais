@@ -107,7 +107,7 @@ d) `$ ls agora.txt ontem.txt 1>resultado1 2>resultado2`
 O comando`ls` tenta listar dois arquivos: `agora.txt` e `ontem.txt`.
 
 - O número `1` antes do `>` representa a saída padrão (saída de sucesso). A listagem bem-sucedida de `agora.txt` (caso ele exista) será redirecionada para um arquivo chamado `resultado1`.
-- O número`2` antes do `>` representa a saída de erro padrão8. Como o arquivo `ontem.txt` provavelmente não existe, a mensagem de erro correspondente será redirecionada para um arquivo chamado `resultado2`.
+- O número`2` antes do `>` representa a saída de erro padrão. Como o arquivo `ontem.txt` provavelmente não existe, a mensagem de erro correspondente será redirecionada para um arquivo chamado `resultado2`.
 
 e) `$ touch arq{10..50}.txt`
 
