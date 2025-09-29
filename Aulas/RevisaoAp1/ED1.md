@@ -61,7 +61,7 @@ O comando`stat` é usado para exibir informações completas de um arquivo, incl
 ---
 7. **Analise as alterações numéricas nos i-nodes ao realizar as operações abaixo:**
 
->     a) Mover arquivo no mesmo sistema de arquivos.
+>     a) Copiar arquivo no mesmo sistema de arquivos.
 Quando um arquivo é copiado usando o comando `cp`, um novo i-node é criado e atribuído ao arquivo recém-criado. O i-node do arquivo original permanece inalterado. Assim, o arquivo original e a nova cópia têm i-nodes diferentes, mesmo estando no mesmo sistema de arquivos.
 
      b) Mover arquivo no mesmo sistema de arquivos.
