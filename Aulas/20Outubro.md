@@ -1,6 +1,6 @@
 ## Gerenciamento de Usuários e Permissão de Acesso
 
-Tipos de contas de usuários usados no linunx:
+Tipos de contas de usuários usados no linux:
 1. Conta do administrador do sistema (ROOT);
 2. Conta dos usuários regulares;
 3. Contas de sistema (ou de serviço): MySQL, SSH, etc.
