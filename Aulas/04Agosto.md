@@ -1,5 +1,3 @@
-# Sistemas Operacionais — 04/08/2025
-
 ## Introdução aos Sistemas Operacionais
 
 - Software que gerencia hardware e outros softwares;  
