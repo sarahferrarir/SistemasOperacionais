@@ -10,7 +10,14 @@ São usadas para:
 - As contas de sistemas não são usadas para login direto.
 
 #### `login != UID`
-> login é o nome mneumônico, UID é a identidade numérica do usuário.
+Login é o nome mneumônico, UID é a identidade numérica do usuário.
 
 #### `Group = GID`
-> group é o nome do grupo, GID é a identidade numérica do grupo.
+Group é o nome do grupo, GID é a identidade numérica do grupo
+
+> Todo usuário tem um grupo associado.
+> Grupo facilita a administração ou vários usuários.
+
+### Comandos usados:
+- whoami - exibe o usuário logado;
+- id - exibe os identificadores associados ao usuário.
