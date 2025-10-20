@@ -22,4 +22,5 @@ Group é o nome do grupo, GID é a identidade numérica do grupo
 
 #### Comandos usados:
 - whoami - exibe o usuário logado;
-- id - exibe os identificadores associados ao usuário.
+- id - exibe os identificadores associados ao usuário;
+- passwd, shadow, group - arquivos de configuração.
