@@ -1,4 +1,4 @@
-# Sistemas Operacionais — 11/08/2025
+
 
 ## Taxonomia de Sistemas Operacionais
 A taxonomia é a forma de classificar os diversos sistemas operacionais com base em características comuns.
