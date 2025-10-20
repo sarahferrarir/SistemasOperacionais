@@ -1,5 +1,3 @@
-
-
 ## Taxonomia de Sistemas Operacionais
 A taxonomia é a forma de classificar os diversos sistemas operacionais com base em características comuns.
 
