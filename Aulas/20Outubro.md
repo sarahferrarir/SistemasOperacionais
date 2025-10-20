@@ -18,6 +18,8 @@ Group é o nome do grupo, GID é a identidade numérica do grupo
 > Todo usuário tem um grupo associado.
 > Grupo facilita a administração ou vários usuários.
 
-### Comandos usados:
+---
+
+#### Comandos usados:
 - whoami - exibe o usuário logado;
 - id - exibe os identificadores associados ao usuário.
